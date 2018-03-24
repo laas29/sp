@@ -14,8 +14,6 @@
             throwErr("Provided value must be a number.");
         n = parseInt(n);
         if (n > 0 && n < 1000000) {
-            if (n == 1)
-                return 0;
             var max = n - 1;
             var numBits = max.toString(2).length;
             var base2string = "";
